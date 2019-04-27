@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+		text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main, hr {
+    max-width: 900px;
+    margin: auto;
+    /* -webkit-box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1); */
+            box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#landing {
+	background: #fff;
+}
+
+#landing-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40vw;
+            flex: 0 1 40vw;
+    height: 50vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+		background: url('../img/business-code-coding-943096.jpg');
+		background-position: right;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		height: 50vh;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 60vw;
+		flex: 0 1 60vw;
+		margin: 0;
+}
+
+.btn {
+    margin: 0;
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -ms-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+}
+
+.btn:hover {
+		background: #333;
+		border: 1px #ccc solid;
+		color: #fff;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.caption {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.skills-section {
+	background: #fff;
+	margin: auto;
+	width: 100%;
+	padding: 30px;
+}
+
+.progress {
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.skills-section .progress .skill {
+	margin: 0 0 0 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.val {
+	float: right;
+	font-style: normal;
+	margin-right: 10px;
+}
+
+.grid-col {
+	margin: 50px 0px;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 250px 250px 250px;
+	grid-gap: 30px;
+	text-align: center;
+	padding: 10px;
+}
+
+.thumb {
+	background: #ccc;
+	padding: 1rem;
+}
+
+.thumb a {
+	text-decoration: none;
+	color: #333;
+}
+
+.desc {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.link {
+	text-align: center;
+	margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+
+/* Max width 500px */
+@media(max-width: 500px) {
+	#landing-text {
+    color: rgb(231, 229, 229);
+	}
+
+	#landing {
+		background: url('../img/business-code-coding-943096.jpg');
+		background-position: center;
+		background-size: cover;
+}
+
+	#landing-image {
+		display: none;
+	}
+
+	.btn {
+		color: #ccc;
+	}
+	
+	.btn:hover {
+		background: #ccc;
+		color: #333;
+	}
+
+	.grid-col {
+		grid-template-columns: auto;
+	}
+	
+}
+
+/* Screen size 501px and Up */
+@media(min-width: 501px) {
+    #landing {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 50%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+		}
+}
+
+/* Screen Sizes 700px and Up */
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
