@@ -183,10 +183,6 @@ footer h3 {
 
 /* Max width 900px */
 @media(max-width: 900px) {
-	body {
-    margin: auto;
-}
-
 	#landing-text {
     color: rgb(231, 229, 229);
 	}
