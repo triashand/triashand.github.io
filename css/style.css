@@ -181,8 +181,8 @@ footer h3 {
 
 
 
-/* Max width 500px */
-@media(max-width: 500px) {
+/* Max width 900px */
+@media(max-width: 900px) {
 	body {
     margin: auto;
 }
@@ -216,8 +216,8 @@ footer h3 {
 	
 }
 
-/* Screen size 501px and Up */
-@media(min-width: 501px) {
+/* Screen size 901px and Up */
+@media(min-width: 901px) {
     #landing {
         display: -webkit-box;
         display: -ms-flexbox;
