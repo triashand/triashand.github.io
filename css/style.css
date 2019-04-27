@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-html, body {
+body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     background: #eee;
     height: auto;
-    width: auto;
 }
 
 h1 {
@@ -184,6 +183,10 @@ footer h3 {
 
 /* Max width 500px */
 @media(max-width: 500px) {
+	body {
+    margin: auto;
+}
+
 	#landing-text {
     color: rgb(231, 229, 229);
 	}
